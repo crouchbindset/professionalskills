@@ -3,7 +3,7 @@
 ## Assignment
 Create an augmented reality playspace prototype.
 
-[Useful Links](https://github.com/crouchbindset/professionalskills/blob/master/Useful_Links.md)
+[Useful Links](https://github.com/crouchbindset/professionalskills/blob/master/LINKS.md)
 
 ## Deadlines: 
 
