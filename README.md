@@ -3,11 +3,7 @@
 ## Assignment
 Create an augmented reality playspace prototype.
 
-useful text
-
-https://www.kent.ac.uk/studentsupport/autism/autism.html
-
-### Team
+[Useful Links](https://github.com/crouchbindset/professionalskills/blob/master/Useful_Links.md)
 
 ## Deadlines: 
 
