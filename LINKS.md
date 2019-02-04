@@ -2,9 +2,19 @@
 
 ## Autism
 
-[University of Kent Autism Support](https://www.kent.ac.uk/studentsupport/autism/autism.html)
+[National Autistic Society](https://www.autism.org.uk/)
 
 [Autism Syptoms](https://www.nhs.uk/conditions/autism/symptoms/)
+
+[University of Kent Autism Support](https://www.kent.ac.uk/studentsupport/autism/autism.html)
+
+[Outdoor Learning Playspaces for Children with Autism](https://www.pentagonplay.co.uk/news-and-info/outdoor-learning-spaces-for-children-with-autism)
+
+[Approaches to helping people with Autism](https://www.autism.org.uk/about/strategies.aspx)
+
+[Social Interaction](https://www.autism.org.uk/about/communication/social-children.aspx)
+
+[Communication](https://www.autism.org.uk/about/communication/communicating.aspx)
 
 ## Vuforia
 
