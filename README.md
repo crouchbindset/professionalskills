@@ -5,6 +5,8 @@ Create an augmented reality playspace prototype.
 
 [Useful Links](https://github.com/crouchbindset/professionalskills/blob/master/LINKS.md)
 
+You can use this [Markdown Guide](https://guides.github.com/features/mastering-markdown/) for an overview of the markdown language used in GitHub .md files, useful for creating GitHub README files and documentation.
+
 ## Deadlines: 
 
 ### 8th February: Project proposal. 
