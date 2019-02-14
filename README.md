@@ -23,7 +23,7 @@ It is important to understand your chosen user group and the challenges they fac
 
 4. Current approaches to addressing these challenges.
 
-##### Technical Plan (max 5 pages) 
+#### Technical Plan (max 5 pages) 
 
 In this report you describe all key technical elements of the development. 
 
