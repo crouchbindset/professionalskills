@@ -9,41 +9,41 @@ You can use this [Markdown Guide](https://guides.github.com/features/mastering-m
 
 ## Deadlines: 
 
-### 8th February: Project proposal. 
+### ~~8th February: Project proposal.~~
 
-#### Project Proposal (max 4 pages) 
+#### ~~Project Proposal (max 4 pages)~~
 
-The proposal is not marked but will help you to think about what you are doing and should be useful when you come to do the evaluative critical review. 
+~~The proposal is not marked but will help you to think about what you are doing and should be useful when you come to do the evaluative critical review.~~
 
-The final year individual project proposal form will be available on Blackboard. However, just pick the bits you think are useful and add in the project management information, because you are working as a team. It must contain two parts: 
+~~The final year individual project proposal form will be available on Blackboard. However, just pick the bits you think are useful and add in the project management information, because you are working as a team. It must contain two parts:~~
 
-##### Part 1: Application Information 
+##### ~~Part 1: Application Information~~
 
-1. Description of the application, problem being solved, requirements. 
+~~1. Description of the application, problem being solved, requirements.~~
 
-2. Brief description of what the system will do. 
+~~2. Brief description of what the system will do.~~
 
-3. Statement of the key risks. 
+~~3. Statement of the key risks.~~
 
-##### Part 2: Project Management Information 
+##### ~~Part 2: Project Management Information~~
 
-Key features of the way you will be working in order to avoid: 
+~~Key features of the way you will be working in order to avoid:~~
 
-1. People being told unexpectedly at the end that their work is rubbish. 
+~~1. People being told unexpectedly at the end that their work is rubbish.~~
 
-2. People not having enough/having too much to do or not being involved. 
+~~2. People not having enough/having too much to do or not being involved.~~
 
-3. No one knowing where the latest version of the software is. 
+~~3. No one knowing where the latest version of the software is.~~ 
 
-4. A disk crash destroying all copies of the software. 
+~~4. A disk crash destroying all copies of the software.~~ 
 
-5. Someone changing the interface between components without agreement. 
+~~5. Someone changing the interface between components without agreement.~~ 
 
-6. The group falling behind without noticing. 
+~~6. The group falling behind without noticing.~~ 
 
-7. Everyone interpreting an agreement in a different way. 
+~~7. Everyone interpreting an agreement in a different way.~~ 
 
-8. Not having a demonstrable system by the deadline.
+~~8. Not having a demonstrable system by the deadline.~~
 
 ### 22nd February: User analysis and technical plan. 
 
