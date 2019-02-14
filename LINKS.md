@@ -16,6 +16,8 @@
 
 [Communication](https://www.autism.org.uk/about/communication/communicating.aspx)
 
+[Facts and Figures](https://www.autismspeaks.org/autism-facts-and-figures)
+
 ## Vuforia
 
 [Vuforia Unity Library](https://library.vuforia.com/articles/Training/getting-started-with-vuforia-in-unity.html)

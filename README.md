@@ -9,42 +9,6 @@ You can use this [Markdown Guide](https://guides.github.com/features/mastering-m
 
 ## Deadlines: 
 
-### 8th February: Project proposal. 
-
-#### Project Proposal (max 4 pages) 
-
-The proposal is not marked but will help you to think about what you are doing and should be useful when you come to do the evaluative critical review. 
-
-The final year individual project proposal form will be available on Blackboard. However, just pick the bits you think are useful and add in the project management information, because you are working as a team. It must contain two parts: 
-
-##### Part 1: Application Information 
-
-1. Description of the application, problem being solved, requirements. 
-
-2. Brief description of what the system will do. 
-
-3. Statement of the key risks. 
-
-##### Part 2: Project Management Information 
-
-Key features of the way you will be working in order to avoid: 
-
-1. People being told unexpectedly at the end that their work is rubbish. 
-
-2. People not having enough/having too much to do or not being involved. 
-
-3. No one knowing where the latest version of the software is. 
-
-4. A disk crash destroying all copies of the software. 
-
-5. Someone changing the interface between components without agreement. 
-
-6. The group falling behind without noticing. 
-
-7. Everyone interpreting an agreement in a different way. 
-
-8. Not having a demonstrable system by the deadline.
-
 ### 22nd February: User analysis and technical plan. 
 
 #### User Analysis (max 2 pages) 
@@ -59,7 +23,7 @@ It is important to understand your chosen user group and the challenges they fac
 
 4. Current approaches to addressing these challenges.
 
-##### Technical Plan (max 5 pages) 
+#### Technical Plan (max 5 pages) 
 
 In this report you describe all key technical elements of the development. 
 
@@ -105,3 +69,39 @@ You may focus the design of your augmented play space prototype to support one o
 2. People with autism 
 
 The prototype should seek to address some of the typical difficulties these user groups face when playing with other people. You should consider what digital augmentations can be made to a physical play space, the people in it or the physical items/toys used during play to help your chosen user group play with other people more effectively. The AR technology you will be developing for is detailed below.
+
+### ~~8th February: Project proposal.~~
+
+#### ~~Project Proposal (max 4 pages)~~
+
+~~The proposal is not marked but will help you to think about what you are doing and should be useful when you come to do the evaluative critical review.~~
+
+~~The final year individual project proposal form will be available on Blackboard. However, just pick the bits you think are useful and add in the project management information, because you are working as a team. It must contain two parts:~~
+
+##### ~~Part 1: Application Information~~
+
+~~1. Description of the application, problem being solved, requirements.~~
+
+~~2. Brief description of what the system will do.~~
+
+~~3. Statement of the key risks.~~
+
+##### ~~Part 2: Project Management Information~~
+
+~~Key features of the way you will be working in order to avoid:~~
+
+~~1. People being told unexpectedly at the end that their work is rubbish.~~
+
+~~2. People not having enough/having too much to do or not being involved.~~
+
+~~3. No one knowing where the latest version of the software is.~~ 
+
+~~4. A disk crash destroying all copies of the software.~~ 
+
+~~5. Someone changing the interface between components without agreement.~~ 
+
+~~6. The group falling behind without noticing.~~ 
+
+~~7. Everyone interpreting an agreement in a different way.~~ 
+
+~~8. Not having a demonstrable system by the deadline.~~
