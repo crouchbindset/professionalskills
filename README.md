@@ -9,48 +9,6 @@ You can use this [Markdown Guide](https://guides.github.com/features/mastering-m
 
 ## Deadlines: 
 
-### 22nd February: User analysis and technical plan. 
-
-#### User Analysis (max 2 pages) 
-
-It is important to understand your chosen user group and the challenges they face when playing with other people. This report should investigate and identify the key barriers your chosen users face because of their impairment, and what approaches are currently used to overcome these challenges. You may discuss some more general issues related to the person’s impairment, but there should also be a focus on the challenges faced during play. In the report there should be four main sections. 
-
-1. Types of impairment experienced by your chosen user group. 
-
-2. Challenges this presents to the users. 
-
-3. Challenges this presents during play. 
-
-4. Current approaches to addressing these challenges.
-
-#### Technical Plan (max 5 pages) 
-
-In this report you describe all key technical elements of the development. 
-
-1. Description of the application demonstrating initial investigation. 
-
-2. Envisaged usage scenarios. 
-
-3. Outline User Interface/Interaction Designs for your AR application. 
-
-4. Evaluation of alternative potential approaches. 
-
-5. Investigation methods, development lifecycle and application structure. 
-
-6. Implementation approaches. 
-
-7. Outline of proposed solution to allow feasibility to be assessed. 
-
-8. Any significant risks and actions to avoid, reduce or tackle them. 
-
-9. Estimate of how much the project will cost. 
-
-10. Worker time, cost per day and overheads. 
-
-11. Commercial software license costs. 
-
-12. Team processes and operational procedures.
-
 ### 8th March: Literature review and ethical issues report. 
 
 ### 5th April: Design review. 
@@ -89,6 +47,48 @@ The prototype should seek to address some of the typical difficulties these user
 ##### ~~Part 2: Project Management Information~~
 
 ~~Key features of the way you will be working in order to avoid:~~
+
+### ~~22nd February: User analysis and technical plan.~~
+
+#### ~~User Analysis (max 2 pages)~~
+
+~~It is important to understand your chosen user group and the challenges they face when playing with other people. This report should investigate and identify the key barriers your chosen users face because of their impairment, and what approaches are currently used to overcome these challenges. You may discuss some more general issues related to the person’s impairment, but there should also be a focus on the challenges faced during play. In the report there should be four main sections.~~
+
+~~1. Types of impairment experienced by your chosen user group.~~
+
+~~2. Challenges this presents to the users.~~
+
+~~3. Challenges this presents during play.~~
+
+~~4. Current approaches to addressing these challenges.~~
+
+#### ~~Technical Plan (max 5 pages)~~
+
+~~In this report you describe all key technical elements of the development.~~
+
+~~1. Description of the application demonstrating initial investigation.~~
+
+~~2. Envisaged usage scenarios.~~
+
+~~3. Outline User Interface/Interaction Designs for your AR application.~~
+
+~~4. Evaluation of alternative potential approaches.~~
+
+~~5. Investigation methods, development lifecycle and application structure.~~
+
+~~6. Implementation approaches.~~
+
+~~7. Outline of proposed solution to allow feasibility to be assessed.~~
+
+~~8. Any significant risks and actions to avoid, reduce or tackle them.~~
+
+~~9. Estimate of how much the project will cost.~~ 
+
+~~10. Worker time, cost per day and overheads.~~ 
+
+~~11. Commercial software license costs.~~
+
+~~12. Team processes and operational procedures.~~
 
 ~~1. People being told unexpectedly at the end that their work is rubbish.~~
 
