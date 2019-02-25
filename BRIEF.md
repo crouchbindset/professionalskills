@@ -1,6 +1,6 @@
 # Assignment Brief
 
-## AR Group Assignment
+## Augmented Reality Group Assignment
 
 Module CO2403: Professional Skills
 
