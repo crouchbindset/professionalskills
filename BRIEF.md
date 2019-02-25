@@ -1,10 +1,12 @@
-**AR Group Assignment**
+# Assignment Brief
+
+## AR Group Assignment
 
 Module CO2403: Professional Skills
 
 Tutor: Chris Casey
 
-**Summary**
+## Summary
 
 This project requires you to apply the project management techniques
 discussed in the first semester and a selection of the material studied
@@ -67,9 +69,9 @@ This is a software engineering project and all students are expected to
 demonstrate their programming ability by developing software. This is
 preparation for your final year project and your future career.
 
-**Deliverables**
+## Deliverables
 
-**~~Project Proposal (max 4 pages)~~**
+### ~~Project Proposal (max 4 pages)~~
 
 ~~The proposal is not marked but will help you to think about what you
 are doing and should be useful when you come to do the evaluative
@@ -112,7 +114,7 @@ It must contain two parts:~~
 
 -   ~~Not having a demonstrable system by the deadline.~~
 
-**~~User Analysis (max 2 pages)~~**
+### ~~User Analysis (max 2 pages)~~
 
 ~~It is important to understand your chosen user group and the
 challenges they face when playing with other people. This report should
@@ -131,7 +133,7 @@ sections.~~
 
 -   ~~Current approaches to addressing these challenges.~~
 
-**~~Technical Plan (max 5 pages)~~**
+### ~~Technical Plan (max 5 pages)~~
 
 ~~In this report you describe all key technical elements of the
 development.~~
@@ -165,8 +167,7 @@ development.~~
 
 -   ~~Team processes and operational procedures.~~
 
-**Literature Review on the use of AR Devices in Assistive Technology (max
-5 pages)**
+### Literature Review on the use of AR Devices in Assistive Technology (max 5 pages)
 
 You are to conduct a literature review investigating the academic
 research that has been carried out using AR as an assistive technology.
@@ -176,8 +177,7 @@ should be discussed if appropriate. Your review should focus on
 peer-reviewed research published in high quality journals or
 conferences.
 
-**Report on Ethical issues associated with AR technologies (max 2
-pages)**
+### Report on Ethical issues associated with AR technologies (max 2 pages)
 
 While AR technologies are not new, today's AR technologies are as
 capable as they have ever been and are only just becoming available at
@@ -191,7 +191,7 @@ referenced at the end of the article (references do not count to your
 page limit) using Harvard referencing
 (<http://libweb.anglia.ac.uk/referencing/harvard.htm>).
 
-**Design Review (2-page explanation and a presentation)**
+### Design Review (2-page explanation and a presentation)
 
 This is a 10-minute presentation to the whole class of your team\'s
 design followed by brief questions. Providing that content is relevant,
@@ -201,14 +201,14 @@ use of the available time, the use of simple, clear slides, and the
 style of delivery. Your team must submit your slides/script prior to the
 presentation session.
 
-**Demonstration of Software**
+### Demonstration of Software
 
 During the scheduled lab session, you will be required to give a
 demonstration of your finished application to the module tutor and a
 moderator. During the demonstration you will be questioned on your
 implementation and project management.
 
-**Evaluative Critical Review (max 4 pages)**
+### Evaluative Critical Review (max 4 pages)
 
 This is a review of your processes and product(s), which should identify
 any problems with either and discuss (i.e. consider alternatives and
@@ -229,12 +229,12 @@ Whether or not you have fixed any deficiencies in the implementation,
 you will receive credit for identifying problems and suggesting
 improvements.
 
-**A subset of records signed during the development (max 10 pages)**
+### A subset of records signed during the development (max 10 pages)
 
 You must submit at least 10 weekly team records. Your team should keep
 electronic or paper records, (but they must be accessible on demand):
 
-Part 1: Descriptive information
+#### Part 1: Descriptive information
 
 -   Meeting times & attendance.
 
@@ -253,7 +253,7 @@ Part 1: Descriptive information
 
 -   Change management information (change requests and authorisation).
 
-Part 2: Quantitative information
+#### Part 2: Quantitative information
 
 A record of activities and durations, with a summary of time spent on
 different activities. The time logs should be sufficiently detailed to
@@ -261,7 +261,7 @@ account for the time spent on the task, simply recording '5 hours spent
 researching AR libraries' does not contain enough detail for how the
 time was spent.
 
-**Deadlines:**
+## Deadlines:
 
 -   8th February: Project proposal.
 
@@ -274,7 +274,7 @@ time was spent.
 -   1st May: Software demonstration, critical review and signed
     records.
 
-**Submission of work**
+## Submission of work
 
 Work should be submitted on Blackboard by the specified week. Where
 multiple files are required use **ZIP** format (not *.rar* or other
@@ -283,7 +283,7 @@ compression format).
 Design reviews and demonstrations will take place in class. Discuss any
 problems with dates in advance.
 
-**Teamwork**
+## Teamwork
 
 This is a team project where work should be allocated with the
 expectation that all students will receive the same mark.
@@ -303,30 +303,30 @@ Where the team has taken appropriate action during the case study, marks
 will be allocated to minimise the effect of individual poor performance
 on the rest of the team.
 
-**Assessment Criteria:**
+## Assessment Criteria:
 
 This exercise assesses your achievement of the following module learning
 outcomes:
 
--   (**1**) Use appropriate techniques to plan, monitor and control a
+-   (1) Use appropriate techniques to plan, monitor and control a
     team project.
 
--   (**2**) Work effectively, individually and as a team member, to meet
+-   (2) Work effectively, individually and as a team member, to meet
     deadlines.
 
--   (**3**) Demonstrate a high level of skill in both oral and written
+-   (3) Demonstrate a high level of skill in both oral and written
     communication.
 
--   (**4**) Discuss professional and ethical issues relevant to
+-   (4) Discuss professional and ethical issues relevant to
     computing practitioners.
 
--   (**5**) Research and apply relevant literature to a given problem.
+-   (5) Research and apply relevant literature to a given problem.
 
--   (**6**) Critically review a team-based project.
+-   (6) Critically review a team-based project.
 
 The mark awarded will be based on the breakdown below:
 
-**Project Management (1, 2, 3, 4) (15%)**
+### Project Management (1, 2, 3, 4) (15%)
 
 1)  Management Processes (team records) 5%
 
@@ -340,7 +340,7 @@ The mark awarded will be based on the breakdown below:
 
     d.  Quality management.
 
-**Interface/Interaction Design (Demo) (2, 3, 4, 5) (10%)**
+### Interface/Interaction Design (Demo) (2, 3, 4, 5) (10%)
 
 1)  User Interface 10%
 
@@ -350,7 +350,7 @@ The mark awarded will be based on the breakdown below:
     b.  Essential facilities, additional useful facilities,
         specification, clarity, feasibility.
 
-**Application Design (2, 3, 5) (25%)**
+### Application Design (2, 3, 5) (25%)
 
 1)  Technical Plan (Technical Design) 10%
 
@@ -378,7 +378,7 @@ The mark awarded will be based on the breakdown below:
     h.  Logical organisation, clarity of visual aids, use of time, and
         delivery.
 
-**Implementation (2, 3, 5, 6) (40%)**
+### Implementation (2, 3, 5, 6) (40%)
 
 1)  Evaluative Critical Review (technical) 10%
 
@@ -401,7 +401,7 @@ The mark awarded will be based on the breakdown below:
 
     g.  Functionality, design, reliability.
 
-**Report on the Ethical issues within Usability Studies (3, 4) (10%)**
+### Report on the Ethical issues within Usability Studies (3, 4) (10%)
 
 1)  Research 3%
 
