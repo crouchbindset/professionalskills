@@ -1,7 +1,7 @@
 # Professional Skills Software Engineering Assignment
 
 ## Assignment
-Create an augmented reality playspace prototype.
+Create a prototype of an augmented reality play space which will support autistic users in overcoming challenges presented to them during play.
 
 [Useful Links](https://github.com/crouchbindset/professionalskills/blob/master/LINKS.md)
 
