@@ -31,7 +31,7 @@ You are to produce a report highlighting the key ethical concerns that need to b
 
 *All material and ideas from other authors must be cited in the text and referenced at the end of the article (references do not count to your page limit) using Harvard referencing (http://libweb.anglia.ac.uk/referencing/harvard.htm).*
 
-###### Research Sources
+##### Research Sources
 
 [ACM Digital Library](https://www.acm.org/publications/digital-library)
 
@@ -57,6 +57,54 @@ Providing that content is relevant, the assessment of this review will concentra
 *Your team must submit your slides/script prior to the presentation session.*
 
 ### 1st May: Software demonstration, critical review and signed records.
+
+#### Demonstration of Software
+
+During the scheduled lab session, you will be required to give a demonstration of your finished application to the module tutor and a moderator. During the demonstration you will be questioned on your implementation and project management.
+
+#### Evaluative Critical Review (max 4 pages)
+
+This is a review of your processes and product(s), which should identify any problems with either and discuss (i.e. consider alternatives and justify choices) what you could have done to improve your work.
+
+Among other things, the review should discuss:
+
+1. The effectiveness of your project management and potential alternatives
+
+2. Any deficiencies in your design uncovered during implementation or review
+
+3. Recommendations for commercial implementation
+
+4. Any alternatives in the light of your implementation experience
+
+Whether or not you have fixed any deficiencies in the implementation, you will receive credit for identifying problems and suggesting improvements.
+
+#### A subset of records signed during the development (max 10 pages)
+
+You must submit at least 10 weekly team records. Your team should keep electronic or paper records, (but they must be accessible on demand):
+
+##### Part 1: Descriptive information
+
+1. Meeting times & attendance
+
+2. Decisions taken
+
+3. Agreed actions (identifying who is responsible for the action and deadline)
+
+4. Design sketches
+
+5. References to books, web-sites or journals
+
+6. Confirmation that tasks have been completed to an appropriate level
+
+7. Fault reports
+
+8. Change management information (change requests and authorisation)
+
+##### Part 2: Quantitative information
+
+A record of activities and durations, with a summary of time spent on different activities.
+
+The time logs should be sufficiently detailed to account for the time spent on the task, simply recording '5 hours spent researching AR libraries' does not contain enough detail for how the time was spent.
 
 ## Brief Summary 
 
