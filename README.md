@@ -104,7 +104,7 @@ You must submit at least 10 weekly team records. Your team should keep electroni
 
 A record of activities and durations, with a summary of time spent on different activities.
 
-The time logs should be sufficiently detailed to account for the time spent on the task, simply recording '5 hours spent researching AR libraries' does not contain enough detail for how the time was spent.
+The time logs should be sufficiently detailed to account for the time spent on the task, simply recording *'5 hours spent researching AR libraries'* does not contain enough detail for how the time was spent.
 
 ## Brief Summary 
 
