@@ -43,6 +43,19 @@ You are to produce a report highlighting the key ethical concerns that need to b
 
 ### 5th April: Design review. 
 
+#### Design Review and Presentation (2 pages)
+
+This is a 10-minute presentation to the whole class of your team's design followed by brief questions.
+
+Providing that content is relevant, the assessment of this review will concentrate on the presentation skills displayed, that is:
+
+1. The organisation of the material
+2. Appropriate use of the available time
+3. The use of simple, clear slide
+4. The style of delivery
+
+*Your team must submit your slides/script prior to the presentation session.*
+
 ### 1st May: Software demonstration, critical review and signed records.
 
 ## Brief Summary 
