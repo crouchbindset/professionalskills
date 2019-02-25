@@ -3,6 +3,8 @@
 ## Assignment
 Create a prototype of an augmented reality play space which will support autistic users in overcoming challenges presented to them during play.
 
+[Full Assignment Brief](https://github.com/crouchbindset/professionalskills/blob/master/BRIEF.md)
+
 [Useful Links](https://github.com/crouchbindset/professionalskills/blob/master/LINKS.md)
 
 You can use this [Markdown Guide](https://guides.github.com/features/mastering-markdown/) for an overview of the markdown language used in GitHub .md files, useful for creating GitHub README files and documentation.
