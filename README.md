@@ -31,6 +31,16 @@ You are to produce a report highlighting the key ethical concerns that need to b
 
 *All material and ideas from other authors must be cited in the text and referenced at the end of the article (references do not count to your page limit) using Harvard referencing (http://libweb.anglia.ac.uk/referencing/harvard.htm).*
 
+###### Research Sources
+
+[ACM Digital Library](https://www.acm.org/publications/digital-library)
+
+[Google Scholar](https://scholar.google.co.uk/)
+
+[UCLan Library](https://librarysearch.uclan.ac.uk/)
+
+[IEEE Digital Library](https://ieeexplore.ieee.org/Xplore/home.jsp)
+
 ### 5th April: Design review. 
 
 ### 1st May: Software demonstration, critical review and signed records.
