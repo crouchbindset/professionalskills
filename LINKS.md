@@ -1,5 +1,15 @@
 # Useful Links
 
+## Research
+
+[ACM Digital Library](https://www.acm.org/publications/digital-library)
+
+[Google Scholar](https://scholar.google.co.uk/)
+
+[CiteThisForMe](http://www.citethisforme.com/harvard/source-type)
+
+[IEEE Digital Library](https://ieeexplore.ieee.org/Xplore/home.jsp)
+
 ## Autism
 
 [National Autistic Society](https://www.autism.org.uk/)
