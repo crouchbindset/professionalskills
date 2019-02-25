@@ -42,7 +42,7 @@ You are part of a development team that wishes to explore the potential of emerg
 
 You may focus the design of your augmented play space prototype to support one of two different user groups. You may choose either: 
 
-1. People with visual impairment 
+1. ~~People with visual impairment~~
 2. **People with autism**
 
 The prototype should seek to address some of the typical difficulties these user groups face when playing with other people. You should consider what digital augmentations can be made to a physical play space, the people in it or the physical items/toys used during play to help your chosen user group play with other people more effectively. The AR technology you will be developing for is detailed below.
