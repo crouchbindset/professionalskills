@@ -17,7 +17,8 @@ You can use this [Markdown Guide](https://guides.github.com/features/mastering-m
 
 You are to conduct a literature review investigating the academic research that has been carried out using AR as an assistive technology. In your search you can look at impairment in general.
 
-You do not need to focus your search on autism or visual impairment, but these impairments should be discussed if appropriate.  
+You do not need to focus your search on autism or visual impairment, but these impairments should be discussed if appropriate.
+
 Your review should focus on peer-reviewed research published in high quality journals or conferences.
 
 #### Ethical Issues Report (max 2 pages)
@@ -28,7 +29,7 @@ As a result, developing AR applications highlights several ethical and legal con
 
 You are to produce a report highlighting the key ethical concerns that need to be considered when developing AR technologies. 
 
-All material and ideas from other authors must be cited in the text and referenced at the end of the article (references do not count to your page limit) using Harvard referencing (http://libweb.anglia.ac.uk/referencing/harvard.htm). 
+*All material and ideas from other authors must be cited in the text and referenced at the end of the article (references do not count to your page limit) using Harvard referencing (http://libweb.anglia.ac.uk/referencing/harvard.htm).*
 
 ### 5th April: Design review. 
 
