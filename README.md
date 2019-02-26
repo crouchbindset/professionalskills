@@ -31,6 +31,16 @@ You are to produce a report highlighting the key ethical concerns that need to b
 
 *All material and ideas from other authors must be cited in the text and referenced at the end of the article (references do not count to your page limit) using Harvard referencing (http://libweb.anglia.ac.uk/referencing/harvard.htm).*
 
+##### Ethical and Legal topics
+
+1. Data Protection (GDPR)
+2. Intellectual Property (IP Copyright)
+3. User Generated Content (UGC and DMCA)
+4. Privacy
+5. Liability
+6. Children’s Online Privacy Protection Act (COPPA)
+7. Culture and Religion
+
 ##### Research Sources
 
 [ACM Digital Library](https://www.acm.org/publications/digital-library)
