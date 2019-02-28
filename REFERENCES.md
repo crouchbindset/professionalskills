@@ -35,3 +35,5 @@ Social Augmented Reality - https://books.google.co.uk/books?hl=en&lr=&id=b09mDwA
 [Ethics and Pervasive Augmented Reality: Some Challenges and Approaches](https://link.springer.com/chapter/10.1007/978-94-007-6833-8_8)
 
 [Privacy in Augmented Reality](https://academic.oup.com/ijlit/article/23/2/157/699869)
+
+[Software Engineering Code of Ethics](https://www.computer.org/web/education/code-of-ethics)
