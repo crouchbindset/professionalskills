@@ -16,3 +16,6 @@ Using Augmented Reality to Help Children with Autism Stay Focused - https://ieee
 
 Interactive augmented reality using Scratch 2.0 to improve physical activities for children with developmental disabilities - https://www.sciencedirect.com/science/article/pii/S0891422214004302 
     -Interactive game to address an impairment (body strength) showing the use of AR in rehablilitation
+
+Augmented reality for people with disabilities - https://ieeexplore.ieee.org/abstract/document/7325462
+-Development of intellectual information technology augmented reality for persons with disabilities
