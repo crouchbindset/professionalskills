@@ -21,6 +21,7 @@ Enveloping users and computers in a collaborative 3D augmented reality - https:/
 
 Beigel, A. R. (2000) ‘Assistive technology assessment: More than the device’, Intervention in School & Clinic, 35(4), p. 237. doi: 10.1177/105345120003500407. - http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=2835405&site=ehost-live
 
+Social Augmented Reality - https://books.google.co.uk/books?hl=en&lr=&id=b09mDwAAQBAJ&oi=fnd&pg=PA312&dq=augmented+reality+disability&ots=Ak5tIksBx5&sig=9qAK3LIP4W5VsCdJYpgKUbwo46s - (Page 312) Adding virtual things over the real world, such as a nametag.
 
 
 ## Ethical Issues Report
