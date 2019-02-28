@@ -19,6 +19,8 @@ Augmented reality for people with disabilities - https://ieeexplore.ieee.org/abs
 
 Enveloping users and computers in a collaborative 3D augmented reality - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=803804 -creating a 3d collaborative environment with augmented reality.
 
+Beigel, A. R. (2000) ‘Assistive technology assessment: More than the device’, Intervention in School & Clinic, 35(4), p. 237. doi: 10.1177/105345120003500407. - http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=2835405&site=ehost-live
+
 
 
 ## Ethical Issues Report
