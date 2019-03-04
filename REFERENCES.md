@@ -37,3 +37,11 @@ Social Augmented Reality - https://books.google.co.uk/books?hl=en&lr=&id=b09mDwA
 [Privacy in Augmented Reality](https://academic.oup.com/ijlit/article/23/2/157/699869)
 
 [Software Engineering Code of Ethics](https://www.computer.org/web/education/code-of-ethics)
+
+[A snapshot of the subject matter of computing ethics](https://ieeexplore.ieee.org/document/7439396)
+
+[Ethics and Computing: Living Responsibly in a Computerized World](https://ieeexplore.ieee.org/book/5264741)
+
+[Surrounded by machines](https://dl.acm.org/citation.cfm?doid=1897852.1897864)
+
+[Augmented reality, augmented ethics: who has the right to augment a particular physical space](https://link.springer.com/article/10.1007/s10676-018-9484-2)
