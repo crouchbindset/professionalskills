@@ -26,9 +26,9 @@ Social Augmented Reality - https://books.google.co.uk/books?hl=en&lr=&id=b09mDwA
 
 ## Ethical Issues Report
 
-[Wassom, B., 2014. Augmented reality law, privacy, and ethics: Law, society, and emerging AR technologies. Syngress.](https://b-ok.cc/book/2569265/8578be)
+[Augmented reality law, privacy, and ethics](https://b-ok.cc/book/2569265/8578be)
 
-[Pase, S., 2012. Ethical considerations in Augmented Reality applications. In Proceedings of the International Conference on e-Learning, e-Business, Enterprise Information Systems, and e-Government (EEE) (p. 1). The Steering Committee of The World Congress in Computer Science, Computer Engineering and Applied Computing (WorldComp).](https://pdfs.semanticscholar.org/ce7a/3f370e5dcf06a05d2b55f2abb1a0cb5e3cca.pdf)
+[Ethical considerations in Augmented Reality applications](https://pdfs.semanticscholar.org/ce7a/3f370e5dcf06a05d2b55f2abb1a0cb5e3cca.pdf)
 
 [Law, virtual reality and augmented reality](https://heinonline.org/HOL/Page?handle=hein.journals/pnlr166&div=32&g_sent=1&casa_token=&collection=journals)
 
