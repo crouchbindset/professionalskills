@@ -45,3 +45,12 @@ Social Augmented Reality - https://books.google.co.uk/books?hl=en&lr=&id=b09mDwA
 [Surrounded by machines](https://dl.acm.org/citation.cfm?doid=1897852.1897864)
 
 [Augmented reality, augmented ethics: who has the right to augment a particular physical space](https://link.springer.com/article/10.1007/s10676-018-9484-2)
+
+----------
+Literature Review Themes
+
+-Relation between Autism in children and Autism in general  
+
+-Relation between Augmented Reality as assistive technology and Augmented Reality in general
+
+-Relation between Assistive Technology for children and Assistive Technology in general
