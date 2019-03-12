@@ -11,46 +11,6 @@ You can use this [Markdown Guide](https://guides.github.com/features/mastering-m
 
 ## Deadlines: 
 
-### 8th March: Literature review and ethical issues report. 
-
-#### Literature Review (max 5 pages)
-
-You are to conduct a literature review investigating the academic research that has been carried out using AR as an assistive technology. In your search you can look at impairment in general.
-
-You do not need to focus your search on autism or visual impairment, but these impairments should be discussed if appropriate.
-
-Your review should focus on peer-reviewed research published in high quality journals or conferences.
-
-#### Ethical Issues Report (max 2 pages)
-
-While AR technologies are not new, today’s AR technologies are as capable as they have ever been and are only just becoming available at consumer level.
-
-As a result, developing AR applications highlights several ethical and legal considerations.
-
-You are to produce a report highlighting the key ethical concerns that need to be considered when developing AR technologies. 
-
-*All material and ideas from other authors must be cited in the text and referenced at the end of the article (references do not count to your page limit) using Harvard referencing (http://libweb.anglia.ac.uk/referencing/harvard.htm).*
-
-##### Ethical and Legal topics
-
-1. Data Protection (GDPR)
-2. Intellectual Property (IP Copyright)
-3. User Generated Content (UGC and DMCA)
-4. Privacy
-5. Liability
-6. Children’s Online Privacy Protection Act (COPPA)
-7. Culture and Religion
-
-##### Research Sources
-
-[ACM Digital Library](https://www.acm.org/publications/digital-library)
-
-[Google Scholar](https://scholar.google.co.uk/)
-
-[UCLan Library](https://librarysearch.uclan.ac.uk/)
-
-[IEEE Digital Library](https://ieeexplore.ieee.org/Xplore/home.jsp)
-
 ### 5th April: Design review. 
 
 #### Design Review and Presentation (2 pages)
@@ -142,3 +102,11 @@ The prototype should seek to address some of the typical difficulties these user
 #### ~~User Analysis (max 2 pages)~~
 
 #### ~~Technical Plan (max 5 pages)~~
+
+### ~~8th March: Literature review and ethical issues report.~~
+
+#### ~~Literature Review (max 5 pages)~~
+
+#### ~~Ethical Issues Report (max 2 pages)~~
+
+
