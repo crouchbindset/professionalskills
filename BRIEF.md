@@ -352,31 +352,13 @@ The mark awarded will be based on the breakdown below:
 
 ### Application Design (2, 3, 5) (25%)
 
-1)  Technical Plan (Technical Design) 10%
+~~1)  Technical Plan (Technical Design) 10%~~ 58%
 
-    a.  Completeness (how it will work, components and algorithms,
-        stability).
+~~2)  User Analysis 5%~~ 89%
 
-    b.  Effectiveness (will it work?).
-
-    c.  Simplicity, flexibility (if needs change) and efficiency.
-
-    d.  Organisation, appropriate notation and clarity.
-
-2)  User Analysis 5%
-
-    e.  Knowledge/Understanding of chosen impairment.
-
-    f.  Appropriate identification of challenges faced by users.
-
-    g.  Exploration of current approaches to challenges faced.
-
-3)  Literature Review 5%
+~~3)  Literature Review 5%~~ 68%
 
 4)  Design Review 5%
-
-    h.  Logical organisation, clarity of visual aids, use of time, and
-        delivery.
 
 ### Implementation (2, 3, 5, 6) (40%)
 
@@ -401,27 +383,7 @@ The mark awarded will be based on the breakdown below:
 
     g.  Functionality, design, reliability.
 
-### Report on the Ethical issues within Usability Studies (3, 4) (10%)
-
-1)  Research 3%
-
-    a.  Range of material and sources.
-
-    b.  High quality and reliable sources.
-
-    c.  Use of evidence.
-
-2)  Logical Organisation 3%
-
-    d.  Summary, introduction, presentation of evaluation, conclusion.
-
-3)  Content & understanding 4%
-
-    e.  Selection of appropriate material.
-
-    f.  Use of information to build up a logical argument.
-
-    g.  Assessment of quality of sources.
+~~### Report on the Ethical issues within Usability Studies (3, 4) (10%)~~ 81%
 
 #### Presentation of assignment work
 
