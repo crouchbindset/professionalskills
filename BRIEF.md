@@ -352,11 +352,11 @@ The mark awarded will be based on the breakdown below:
 
 ### Application Design (2, 3, 5) (25%)
 
-~~1)  Technical Plan (Technical Design) 10%~~ 58%
+~~1)  Technical Plan (Technical Design) 10%~~ **58%**
 
-~~2)  User Analysis 5%~~ 89%
+~~2)  User Analysis 5%~~ **89%**
 
-~~3)  Literature Review 5%~~ 68%
+~~3)  Literature Review 5%~~ **68%**
 
 4)  Design Review 5%
 
@@ -383,7 +383,7 @@ The mark awarded will be based on the breakdown below:
 
     g.  Functionality, design, reliability.
 
-~~### Report on the Ethical issues within Usability Studies (3, 4) (10%)~~ 81%
+~~### Report on the Ethical issues within Usability Studies (3, 4) (10%)~~ **81%**
 
 #### Presentation of assignment work
 
