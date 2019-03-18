@@ -4,8 +4,6 @@
 
 Module CO2403: Professional Skills
 
-Tutor: Chris Casey
-
 ## Summary
 
 This project requires you to apply the project management techniques
