@@ -4,11 +4,33 @@
 
 The game will have two themes, for example; Dinosaurs, Animals, Cars, Super Heroes
 
+Each card within a theme will have a set of categories in which it will have values which will be used to compared cards against one another.
+
+For simplicity, the card values should be a star rating from 0-5*.
+
+### Animals/Dinosaurs
+
+* Lifespan (On average how long do they live?)
+* Population (Animals) (How many in the wild?)
+* Speed (Top speed?)
+* Strength (Relative strength?)
+* Size (How large can they be?)
+* Weight (How big can they get?)
+* Intelligence (Relative intelligence?)
+* Longevity (Dinosaurs) (For how many years did they exist?)
+
+### Vehicles
+
+* Cost (How expensive can they be?)
+* Speed (How fast can they go?)
+* Size (How big are they?)
+* Power (Relative power, something like horsepower?)
+
 ## Game Cards
 
-The game will consist of three playable card types, basic, rare and epic.
+Each player will have a card which will augment their current playable card.
 
-A players deck will consist of 10 cards, six basic, three rare and one epic, with basic cards having the least overall stats and epic having the most.
+Each card will belong to a theme (see above), and will have its own values for each category. This will need to be associated with the game object with the model.
 
 ## Game Modes
 
