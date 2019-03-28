@@ -42,9 +42,9 @@
 
 [Unity Building for Android](https://docs.unity3d.com/Manual/android-BuildProcess.html)
 
-[Unity Multiplayer Documentation] (https://docs.unity3d.com/Manual/UNet.html) 
+[Unity Multiplayer Documentation](https://docs.unity3d.com/Manual/UNet.html)
 
-[Unity LAN Tutorial] (https://www.youtube.com/watch?time_continue=1&v=aFttCm9649A)
+[Unity LAN Multiplayer Tutorial](https://www.youtube.com/watch?time_continue=1&v=aFttCm9649A)
 
 ## Android
 
