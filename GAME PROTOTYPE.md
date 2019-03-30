@@ -6,18 +6,14 @@ The game will have two themes, for example; Dinosaurs, Animals, Cars, Super Hero
 
 Each card within a theme will have a set of categories in which it will have values which will be used to compared cards against one another.
 
-For simplicity, the card values should be a star rating from 0-5*.
+For simplicity, the card values should be a star rating from 1-5*.
 
 ### Animals/Dinosaurs
 
 * Lifespan (On average how long do they live?)
-* Population (Animals) (How many in the wild?)
 * Speed (Top speed?)
 * Strength (Relative strength?)
 * Size (How large can they be?)
-* Weight (How big can they get?)
-* Intelligence (Relative intelligence?)
-* Longevity (Dinosaurs) (For how many years did they exist?)
 
 ### Vehicles
 
