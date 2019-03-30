@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Blue" size="1.000000 1.642857" />
+    <ImageTarget name="Green" size="1.000000 1.642857" />
+    <ImageTarget name="Red" size="1.000000 1.642857" />
+    <ImageTarget name="Yellow" size="1.000000 1.642857" />
+    <ImageTarget name="Board" size="1.000000 1.642857" />
+  </Tracking>
+</QCARConfig>

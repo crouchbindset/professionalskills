@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{42086EC7-0C8C-565C-12FA-C13F6F17566F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ModelSwapper.cs">
+    <Files>
+      <File FileName="Assets/ModelSwapper.cs" Line="13" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Vuforia" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="ModelSwapper.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
