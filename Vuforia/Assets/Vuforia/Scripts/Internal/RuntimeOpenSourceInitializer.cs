@@ -8,6 +8,7 @@ countries.
 
 using System;
 using UnityEngine;
+using Vuforia;
 
 namespace Vuforia.UnityCompiled
 {
