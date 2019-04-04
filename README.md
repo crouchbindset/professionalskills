@@ -9,22 +9,7 @@ Create a prototype of an augmented reality play space which will support autisti
 
 You can use this [Markdown Guide](https://guides.github.com/features/mastering-markdown/) for an overview of the markdown language used in GitHub .md files, useful for creating GitHub README files and documentation.
 
-## Deadlines : 
-
-### 5th April: Design review. 
-
-#### Design Review and Presentation (2 pages)
-
-This is a 10-minute presentation to the whole class of your team's design followed by brief questions.
-
-Providing that content is relevant, the assessment of this review will concentrate on the presentation skills displayed, that is:
-
-1. The organisation of the material
-2. Appropriate use of the available time
-3. The use of simple, clear slide
-4. The style of delivery
-
-*Your team must submit your slides/script prior to the presentation session.*
+## Deadlines
 
 ### 1st May: Software demonstration, critical review and signed records.
 
@@ -108,5 +93,9 @@ The prototype should seek to address some of the typical difficulties these user
 #### ~~Literature Review (max 5 pages)~~
 
 #### ~~Ethical Issues Report (max 2 pages)~~
+
+### ~~5th April: Design review.~~
+
+#### ~~Design Review and Presentation (2 pages)~~
 
 
