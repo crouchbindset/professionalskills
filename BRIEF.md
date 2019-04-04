@@ -189,15 +189,15 @@ referenced at the end of the article (references do not count to your
 page limit) using Harvard referencing
 (<http://libweb.anglia.ac.uk/referencing/harvard.htm>).~~
 
-### Design Review (2-page explanation and a presentation)
+### ~~Design Review (2-page explanation and a presentation)~~
 
-This is a 10-minute presentation to the whole class of your team\'s
+~~This is a 10-minute presentation to the whole class of your team\'s
 design followed by brief questions. Providing that content is relevant,
 the assessment of this review will concentrate on the presentation
 skills displayed, that is: the organisation of the material, appropriate
 use of the available time, the use of simple, clear slides, and the
 style of delivery. Your team must submit your slides/script prior to the
-presentation session.
+presentation session.~~
 
 ### Demonstration of Software
 
