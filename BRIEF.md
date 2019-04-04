@@ -356,7 +356,7 @@ The mark awarded will be based on the breakdown below:
 
 ~~3)  Literature Review 5%~~ **68%**
 
-4)  Design Review 5%
+~~4)  Design Review 5%~~ **77%**
 
 ### Implementation (2, 3, 5, 6) (40%)
 
