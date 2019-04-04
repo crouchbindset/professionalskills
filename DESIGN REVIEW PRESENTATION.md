@@ -1,4 +1,4 @@
-# Design Review (2-page explanation and a presentation) 5
+# Design Review (2-page explanation and a presentation)
 
 This is a 10-minute presentation to the whole class of your team's design followed by brief questions.
 
