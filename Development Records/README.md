@@ -1,5 +1,7 @@
 # Development Records
 
+Make sure you add your actions and log of how you spent your time for each weekly record, you can find records of what was uploaded/added to GitHub in code commits.
+
 ## Schedule
 
 * ~~Week 1: 31st January - 7th February~~
