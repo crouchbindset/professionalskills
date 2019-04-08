@@ -14,3 +14,6 @@ Make sure you add your actions and log of how you spent your time for each weekl
 * Week 8: 21st March - 28th March
 * Week 9: 28th March - 4th April
 * Week 10: 4th April - 11th April
+* Week 11: 11th April - 18th April
+* Week 12: 18th April - 25th April
+* Week 13: 25th April - 1st May **(Deadline)**
