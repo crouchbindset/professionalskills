@@ -1,5 +1,19 @@
 # Game Prototype Details
 
+## Programme Structure
+
+### Player Class
+
+A player **CPlayer** class to create players within the game, attributes will include name, score, current card, deck and functions for win, lose and draw round and win or lose game.
+
+Card classes **CDinosaur** and **CVehicle** for creating card objects which will be stored within a list which will be assigned to each player of the game.
+
+We will need a game management class **CGame** to handle game turns, shared variables and functions and game states.
+
+A main menu **CMenu** and pause menu **CPause** scripts to handle UI elements and methods.
+
+Any scripts relevent to multiplayer, or are these implemented within other classes?
+
 ## Game Themes
 
 The game will have two themes, for example; Dinosaurs, Animals, Cars, Super Heroes
@@ -10,17 +24,15 @@ For simplicity, the card values should be a star rating from 1-5*.
 
 ### Animals/Dinosaurs
 
-* Lifespan (On average how long do they live?)
-* Speed (Top speed?)
-* Strength (Relative strength?)
-* Size (How large can they be?)
+* Speed
+* Strength 
+* Agility
 
 ### Vehicles
 
-* Cost (How expensive can they be?)
-* Speed (How fast can they go?)
-* Size (How big are they?)
-* Power (Relative power, something like horsepower?)
+* Speed
+* Power 
+* Agility
 
 ## Game Cards
 
@@ -32,7 +44,7 @@ Each card will belong to a theme (see above), and will have its own values for e
 
 The application could have two modes.
 
-### Top Trumps
+### Top Trumps (main mode)
 
 [Top Trumps Wiki](https://en.wikipedia.org/wiki/Top_Trumps)
 
@@ -42,7 +54,7 @@ The application could have two modes.
 4. The winner of the previous round is the first player of the next round.
 5. Players are eliminated when they lose their last card, and the winner is the player who obtains the whole pack.
 
-### Quick head-to-head
+### Quick head-to-head (possible extra)
 
 1. First player picks a category and compares it with opponent.
 2. Player with the best score on their card wins and gains +1 point and both cards are discarded.
