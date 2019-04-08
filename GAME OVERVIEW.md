@@ -2,7 +2,7 @@
 
 ## Programme Structure
 
-### Player Class
+### Classes and Scripts
 
 A player **CPlayer** class to create players within the game, attributes will include name, score, current card, deck and functions for win, lose and draw round and win or lose game.
 
