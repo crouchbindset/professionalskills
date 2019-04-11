@@ -140,7 +140,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160329570}
-  m_Mesh: {fileID: 471293852}
+  m_Mesh: {fileID: 513185925}
 --- !u!23 &160329572
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -158,7 +158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 424378558}
+  - {fileID: 282208636}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -236,7 +236,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!21 &424378558
+--- !u!21 &282208636
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -245,7 +245,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'YellowMaterial
 
-    12376'
+    12374'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -264,13 +264,13 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!43 &471293852
+--- !u!43 &513185925
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh12366
+  m_Name: ImageTargetMesh12364
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 517560370}
   - component: {fileID: 517560369}
   - component: {fileID: 517560368}
+  - component: {fileID: 517560373}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: Untagged
@@ -534,7 +535,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &678662171
+--- !u!114 &517560373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517560367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05962d4dfcee449a4b8a95f8daad3c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPlayer: 
+  blueTrackable: {fileID: 797634978}
+  yellowTrackable: {fileID: 160329575}
+  position: {x: 0, y: 0, z: 0}
+  scale: {x: 1, y: 1, z: 1}
+--- !u!21 &566835778
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -543,7 +561,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'BlueMaterial
 
-    12406'
+    12408'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -576,7 +594,6 @@ GameObject:
   - component: {fileID: 797634976}
   - component: {fileID: 797634975}
   - component: {fileID: 797634974}
-  - component: {fileID: 797634973}
   m_Layer: 0
   m_Name: Player (Blue)
   m_TagString: Untagged
@@ -584,18 +601,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &797634973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797634972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8ae13be104344689a3e20d3a98474fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!33 &797634974
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -603,7 +608,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797634972}
-  m_Mesh: {fileID: 1579663883}
+  m_Mesh: {fileID: 2043933605}
 --- !u!23 &797634975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -621,7 +626,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 678662171}
+  - {fileID: 566835778}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -699,13 +704,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1579663883
+--- !u!43 &2043933605
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh12394
+  m_Name: ImageTargetMesh12398
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
