@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Vuforia;
+using System;
 
 public class SinglePlayer : MonoBehaviour, ITrackableEventHandler
 {
@@ -22,15 +21,16 @@ public class SinglePlayer : MonoBehaviour, ITrackableEventHandler
     //Trackable objects representing physical cards
     public TrackableBehaviour blueTrackable;
     public TrackableBehaviour yellowTrackable;
+    public TrackableBehaviour boardTrackable;
 
     //Vector position and scale for augmented models
     public Vector3 position = new Vector3(0, 0, 0);
     public Vector3 scale = new Vector3(1, 1, 1);
-
-
+    
     //Start is called before the first frame update
     void Start()
     {
+        
         //Create player objects, with player name parameter
         bluePlayer = new CPlayer("Blue Player");
         yellowPlayer = new CPlayer("Yellow Player");
@@ -40,6 +40,10 @@ public class SinglePlayer : MonoBehaviour, ITrackableEventHandler
         blueIndex = 0;
         yellowIndex = 0;
 
+        if (boardTrackable)
+        {
+            boardTrackable.RegisterTrackableEventHandler(this);
+        }
         if (blueTrackable)
         {
             blueTrackable.RegisterTrackableEventHandler(this);
@@ -101,9 +105,10 @@ public class SinglePlayer : MonoBehaviour, ITrackableEventHandler
     //GUI is called once per frame and handles GUI elements
     private void OnGUI()
     {
+        
         GUIStyle labelStyle = new GUIStyle
         {
-            fontSize = 36
+            fontSize = 30
         };
         labelStyle.alignment = TextAnchor.UpperCenter;
 
@@ -132,13 +137,13 @@ public class SinglePlayer : MonoBehaviour, ITrackableEventHandler
 
         GUIStyle cardDetailsLeft = new GUIStyle
         {
-            fontSize = 36
+            fontSize = 30
         };
         cardDetailsLeft.normal.textColor = Color.blue;
 
         GUIStyle cardDetailsRight = new GUIStyle
         {
-            fontSize = 36
+            fontSize = 30
         };
         cardDetailsRight.normal.textColor = Color.yellow;
         cardDetailsRight.alignment = TextAnchor.UpperRight;
@@ -190,6 +195,7 @@ public class SinglePlayer : MonoBehaviour, ITrackableEventHandler
         GUI.Label(new Rect(Screen.width, Screen.height / 2 - 25, 0, 0), "Speed: " + yellowPlayer.PlayerDinosaurs[yellowIndex].DinosaurSpeed, cardDetailsRight);
         GUI.Label(new Rect(Screen.width, Screen.height / 2 + 25, 0, 0), "Strength: " + yellowPlayer.PlayerDinosaurs[yellowIndex].DinosaurStrength, cardDetailsRight);
         GUI.Label(new Rect(Screen.width, Screen.height / 2 + 75, 0, 0), "Agility: " + yellowPlayer.PlayerDinosaurs[yellowIndex].DinosaurAgility, cardDetailsRight);
+
 
         if (GUI.Button(new Rect(Screen.width / 2 - 200, Screen.height - 200, 100, 50), "Speed"))
         {
