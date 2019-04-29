@@ -206,7 +206,7 @@ demonstration of your finished application to the module tutor and a
 moderator. During the demonstration you will be questioned on your
 implementation and project management.
 
-### Evaluative Critical Review (max 4 pages)
+### Evaluative Critical Review (max 4 pages) (20%)
 
 This is a review of your processes and product(s), which should identify
 any problems with either and discuss (i.e. consider alternatives and
@@ -227,7 +227,7 @@ Whether or not you have fixed any deficiencies in the implementation,
 you will receive credit for identifying problems and suggesting
 improvements.
 
-### A subset of records signed during the development (max 10 pages)
+### A subset of records signed during the development (max 10 pages) (5%)
 
 You must submit at least 10 weekly team records. Your team should keep
 electronic or paper records, (but they must be accessible on demand):
