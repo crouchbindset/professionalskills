@@ -2,6 +2,3 @@ sceneSetups:
 - path: Assets/MainMenu.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/AR Scene.unity
-  isLoaded: 1
-  isActive: 0

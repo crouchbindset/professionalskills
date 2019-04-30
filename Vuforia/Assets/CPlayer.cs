@@ -12,6 +12,10 @@ public class CPlayer
     {
         PlayerName = name;
         PlayerScore = 0;
+        DeckIndex = 0;
+        TurnStatus = 0;
+        HasChosen = false;
+        CurrentTurn = false;
 
         //Create decks (lists) of card type objects
         PlayerDinosaurs = PlayerDecks.Dinosaurs;
@@ -36,7 +40,19 @@ public class CPlayer
         }
     }
 
-    //Players current score
+    //Is it the players turn?
+    public bool CurrentTurn { get; set;  }
+
+    //Has the player chosen an attribute to play?
+    public bool HasChosen { get; set;  }
+
+    //Players turn status, 0 = none, 1 = won, 2 = lost, 3 = drew
+    public int TurnStatus { get; set; }
+
+    //Player deck index getter and setter
+    public int DeckIndex { get; set; }
+
+    //Players current score getter and setter
     public int PlayerScore { get; set; }
 
     //Player name getter
