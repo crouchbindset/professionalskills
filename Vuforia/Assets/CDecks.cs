@@ -46,6 +46,5 @@ public class CDecks
 
     //Vehicle deck (list) getter
     public List<CVehicle> Vehicles { get; }
-
 }
 
