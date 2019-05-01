@@ -29,6 +29,9 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
     //Chosen deck to use, 0 = Dinosaurs, 1 = Vehicles
     public int chosenDeck = 0;
 
+    //Load text from file
+    public CGetDialogue getDialogue;
+
     public void useDinosaurs()
     {
         chosenDeck = 0;
@@ -42,8 +45,8 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
     void Start()
     {
         //Create player objects, with player name parameter
-        bluePlayer = new CPlayer("Blue Player");
-        yellowPlayer = new CPlayer("Yellow Player");
+        bluePlayer = new CPlayer(getDialogue.GetDialogue("blue_player"));
+        yellowPlayer = new CPlayer(getDialogue.GetDialogue("yellow_player"));
 
         //Initialize the game at turn 1
         turnCounter = 1;
@@ -63,8 +66,8 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
     void OnEnable()
     {
         //Create player objects, with player name parameter
-        bluePlayer = new CPlayer("Blue Player");
-        yellowPlayer = new CPlayer("Yellow Player");
+        bluePlayer = new CPlayer(getDialogue.GetDialogue("blue_player"));
+        yellowPlayer = new CPlayer(getDialogue.GetDialogue("yellow_player"));
 
         //Initialize the game at turn 1
         turnCounter = 1;
@@ -110,12 +113,12 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
             if (chosenDeck == 1)
             {
                 deckModel = Resources.Load<Transform>
-                       ("Vehicles/" + bluePlayer.PlayerVehicles[bluePlayer.DeckIndex].VehicleName);
+                       (getDialogue.GetDialogue("category_vehicles") + bluePlayer.PlayerVehicles[bluePlayer.DeckIndex].VehicleName);
             }
             else
             {
                 deckModel = Resources.Load<Transform>
-                       ("Dinosaurs/" + bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurName);
+                       (getDialogue.GetDialogue("category_dinosaurs") + bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurName);
             }
             Transform blueTransform = Instantiate(deckModel) as Transform;
             //Add model as child to trackable
@@ -133,12 +136,12 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
             if (chosenDeck == 1)
             {
                 deckModel = Resources.Load<Transform>
-                       ("Vehicles/" + yellowPlayer.PlayerVehicles[yellowPlayer.DeckIndex].VehicleName);
+                       (getDialogue.GetDialogue("category_vehicles") + yellowPlayer.PlayerVehicles[yellowPlayer.DeckIndex].VehicleName);
             }
             else
             {
                 deckModel = Resources.Load<Transform>
-                       ("Dinosaurs/" + yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurName);
+                       (getDialogue.GetDialogue("category_dinosaurs") + yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurName);
             }
             Transform yellowTransform = Instantiate(deckModel) as Transform;
             yellowTransform.parent = yellowTrackable.transform;
@@ -205,13 +208,13 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
         if (bluePlayer.PlayerDinosaurs.Count <= 0)
         {
             labelStyle.normal.textColor = Color.red;
-            GUI.Label(resultBox, "You lost!", labelStyle);
+            GUI.Label(resultBox, getDialogue.GetDialogue("lose_message"), labelStyle);
             return;
         }
         else if (yellowPlayer.PlayerDinosaurs.Count <= 0)
         {
             labelStyle.normal.textColor = Color.green;
-            GUI.Label(resultBox, "You won!", labelStyle);
+            GUI.Label(resultBox, getDialogue.GetDialogue("win_message"), labelStyle);
             return;
         }
 
@@ -219,42 +222,42 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
         {
             case 1:
                 labelStyle.normal.textColor = Color.green;
-                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 0, 0), "You won this turn!", labelStyle);
+                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 0, 0), getDialogue.GetDialogue("win_turn"), labelStyle);
                 break;
             case 2:
                 labelStyle.normal.textColor = Color.red;
-                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 0, 0), "You lost this turn!", labelStyle);
+                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 0, 0), getDialogue.GetDialogue("lose_turn"), labelStyle);
                 break;
             case 3:
                 labelStyle.normal.textColor = Color.white;
-                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 0, 0), "You drew this turn!", labelStyle);
+                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 0, 0), getDialogue.GetDialogue("draw_turn"), labelStyle);
                 break;
             case 4:
                 labelStyle.normal.textColor = Color.white;
-                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 0, 0), "You must play your turn first", labelStyle);
+                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 0, 0), getDialogue.GetDialogue("turn_not_played"), labelStyle);
                 break;
         }
 
         if (turnCounter % 2 != 0)
         {
             labelStyle.normal.textColor = Color.blue;
-            GUI.Label(turnBox, bluePlayer.PlayerName + "'s turn", labelStyle);
+            GUI.Label(turnBox, bluePlayer.PlayerName + getDialogue.GetDialogue("turn_append"), labelStyle);
             bluePlayer.CurrentTurn = true;
             yellowPlayer.CurrentTurn = false;
         }
         else
         {
             labelStyle.normal.textColor = Color.yellow;
-            GUI.Label(turnBox, yellowPlayer.PlayerName + "'s turn", labelStyle);
+            GUI.Label(turnBox, yellowPlayer.PlayerName + getDialogue.GetDialogue("turn_append"), labelStyle);
             bluePlayer.CurrentTurn = false;
             yellowPlayer.CurrentTurn = true;
         }
 
         labelStyle.normal.textColor = Color.blue;
-        GUI.Label(new Rect(20, 20, 0, 0), "Score: " + bluePlayer.PlayerScore, cardDetailsLeft);
+        GUI.Label(new Rect(0, 0, 0, 0), getDialogue.GetDialogue("score") + bluePlayer.PlayerScore, cardDetailsLeft);
 
         labelStyle.normal.textColor = Color.yellow;
-        GUI.Label(new Rect(Screen.width-20, 20, 0, 0), "Score: " + yellowPlayer.PlayerScore, cardDetailsRight);
+        GUI.Label(new Rect(Screen.width, 0, 0, 0), getDialogue.GetDialogue("score") + yellowPlayer.PlayerScore, cardDetailsRight);
 
         if (chosenDeck == 1)
         {
