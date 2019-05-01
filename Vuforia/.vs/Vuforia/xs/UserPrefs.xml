@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{42086EC7-0C8C-565C-12FA-C13F6F17566F}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/COOPGame.cs">
     <Files>
-      <File FileName="Assets/CPlayer.cs" Line="40" Column="10" />
-      <File FileName="Assets/COOPGame.cs" Line="271" Column="14" />
+      <File FileName="Assets/COOPGame.cs" Line="290" Column="57" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

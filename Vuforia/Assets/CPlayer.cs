@@ -7,14 +7,20 @@ public class CPlayer
     //Create a deck object, contains initial deck (list) setups
     readonly CDecks PlayerDecks = new CDecks();
 
-    //Constructor, with player name parameter
+    //Constructor
     public CPlayer(string name)
     {
+        //Player object name
         PlayerName = name;
+        //Player object score
         PlayerScore = 0;
+        //Current deck (list) index
         DeckIndex = 0;
+        //Turn status, 0 = none, 1 = won, 2 = lost, 3 = drew
         TurnStatus = 0;
+        //Has the player chosen an attribute to play?
         HasChosen = false;
+        //Is it currently this players turn?
         CurrentTurn = false;
 
         //Create decks (lists) of card type objects
@@ -40,22 +46,22 @@ public class CPlayer
         }
     }
 
-    //Is it the players turn?
+    //Is it currently this players turn?
     public bool CurrentTurn { get; set;  }
 
     //Has the player chosen an attribute to play?
     public bool HasChosen { get; set;  }
 
-    //Players turn status, 0 = none, 1 = won, 2 = lost, 3 = drew
+    //Turn status getter and setter, 0 = none, 1 = won, 2 = lost, 3 = drew
     public int TurnStatus { get; set; }
 
-    //Player deck index getter and setter
+    //Deck index getter and setter
     public int DeckIndex { get; set; }
 
-    //Players current score getter and setter
+    //Score getter and setter
     public int PlayerScore { get; set; }
 
-    //Player name getter
+    //Name getter
     public string PlayerName { get; }
 
     //Dinosaur deck (list) getter

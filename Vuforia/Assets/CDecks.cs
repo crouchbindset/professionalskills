@@ -7,7 +7,7 @@ public class CDecks
         //Dinosaur card deck (list)
         Dinosaurs = new List<CDinosaur>(new CDinosaur[]
         {
-            //Create Dinosaur objects with name, speed, strength and agility
+            //Create Dinosaur objects with name (string), speed (int), strength (int) and agility (int)
             new CDinosaur("Ankylosaurus",2,4,2),
             new CDinosaur("Dilophosaurus",3,2,5),
             new CDinosaur("Mammoth",3,4,1),
@@ -25,7 +25,7 @@ public class CDecks
         //Vehicle card deck (list)
         Vehicles = new List<CVehicle>(new CVehicle[]
         {
-            //Create Vehicle objects with name, speed, power and agility
+            //Create Vehicle objects with name (string), speed (int), power (int) and agility (int)
             new CVehicle("Aeroplane",5,5,1),
             new CVehicle("Ambulance",1,1,1),
             new CVehicle("Bicycle",1,1,1),
