@@ -48,6 +48,10 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
         bluePlayer = new CPlayer(getDialogue.GetDialogue("blue_player"));
         yellowPlayer = new CPlayer(getDialogue.GetDialogue("yellow_player"));
 
+        //Set up game so blue player starts
+        bluePlayer.CurrentTurn = true;
+        yellowPlayer.CurrentTurn = false;
+
         //Initialize the game at turn 1
         turnCounter = 1;
 
@@ -171,6 +175,7 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
         {
             yellowPlayer.DeckIndex = 0;
         }
+        //Create button and text styles
         GUIStyle buttonStyle = new GUIStyle("button")
         {
             fontSize = 36,
@@ -201,24 +206,78 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
 
         //Box at the top center to show current player turn
         Rect turnBox = new Rect(Screen.width / 2, 20, 0, 0);
+
+        //Player scores
+        labelStyle.normal.textColor = Color.blue;
+        GUI.Label(new Rect(0, 0, 0, 0), getDialogue.GetDialogue("score") + bluePlayer.PlayerScore, cardDetailsLeft);
+        labelStyle.normal.textColor = Color.yellow;
+        GUI.Label(new Rect(Screen.width, 0, 0, 0), getDialogue.GetDialogue("score") + yellowPlayer.PlayerScore, cardDetailsRight);
+
+        //Decide which players turn it is, update turn display and play turn
+        if (bluePlayer.CurrentTurn)
+        {
+            labelStyle.normal.textColor = Color.blue;
+            GUI.Label(turnBox, bluePlayer.PlayerName + getDialogue.GetDialogue("turn_append"), labelStyle);
+            playTurn(bluePlayer, yellowPlayer);
+        }
+        else
+        {
+            labelStyle.normal.textColor = Color.yellow;
+            GUI.Label(turnBox, yellowPlayer.PlayerName + getDialogue.GetDialogue("turn_append"), labelStyle);
+            playTurn(yellowPlayer, bluePlayer);
+        }
+    }
+
+    public void playTurn(CPlayer currentPlayer, CPlayer opponentPlayer)
+    {
+        //Styles for button and labels
+        GUIStyle buttonStyle = new GUIStyle("button")
+        {
+            fontSize = 36,
+            fontStyle = FontStyle.Bold,
+        };
+        GUIStyle labelStyle = new GUIStyle
+        {
+            fontSize = 36,
+            fontStyle = FontStyle.Bold,
+            alignment = TextAnchor.UpperCenter
+        };
+
+        GUIStyle cardDetailsLeft = new GUIStyle
+        {
+            fontSize = 36,
+            fontStyle = FontStyle.Bold,
+            alignment = TextAnchor.UpperLeft
+        };
+        cardDetailsLeft.normal.textColor = Color.blue;
+
+        GUIStyle cardDetailsRight = new GUIStyle
+        {
+            fontSize = 36,
+            fontStyle = FontStyle.Bold,
+            alignment = TextAnchor.UpperRight
+        };
+        cardDetailsRight.normal.textColor = Color.yellow;
+
         //Box in the center of the screen to show results
         Rect resultBox = new Rect(Screen.width / 2, Screen.width / 2, 0, 0);
 
         //If a player runs out of cards, end the game
-        if (bluePlayer.PlayerDinosaurs.Count <= 0)
+        if (currentPlayer.PlayerDinosaurs.Count <= 0)
         {
             labelStyle.normal.textColor = Color.red;
             GUI.Label(resultBox, getDialogue.GetDialogue("lose_message"), labelStyle);
             return;
         }
-        else if (yellowPlayer.PlayerDinosaurs.Count <= 0)
+        else if (opponentPlayer.PlayerDinosaurs.Count <= 0)
         {
             labelStyle.normal.textColor = Color.green;
             GUI.Label(resultBox, getDialogue.GetDialogue("win_message"), labelStyle);
             return;
         }
 
-        switch (bluePlayer.TurnStatus)
+        //Display turn status if turn has ended
+        switch (currentPlayer.TurnStatus)
         {
             case 1:
                 labelStyle.normal.textColor = Color.green;
@@ -238,148 +297,144 @@ public class COOPGame : MonoBehaviour, ITrackableEventHandler
                 break;
         }
 
-        if (turnCounter % 2 != 0)
-        {
-            labelStyle.normal.textColor = Color.blue;
-            GUI.Label(turnBox, bluePlayer.PlayerName + getDialogue.GetDialogue("turn_append"), labelStyle);
-            bluePlayer.CurrentTurn = true;
-            yellowPlayer.CurrentTurn = false;
-        }
-        else
-        {
-            labelStyle.normal.textColor = Color.yellow;
-            GUI.Label(turnBox, yellowPlayer.PlayerName + getDialogue.GetDialogue("turn_append"), labelStyle);
-            bluePlayer.CurrentTurn = false;
-            yellowPlayer.CurrentTurn = true;
-        }
-
-        labelStyle.normal.textColor = Color.blue;
-        GUI.Label(new Rect(0, 0, 0, 0), getDialogue.GetDialogue("score") + bluePlayer.PlayerScore, cardDetailsLeft);
-
-        labelStyle.normal.textColor = Color.yellow;
-        GUI.Label(new Rect(Screen.width, 0, 0, 0), getDialogue.GetDialogue("score") + yellowPlayer.PlayerScore, cardDetailsRight);
-
+        //Choose which deck to get cards and models from
         if (chosenDeck == 1)
         {
-            GUI.Label(new Rect(20, Screen.height / 2 - 75, 0, 0), deckAttributes[0] + ": " + bluePlayer.PlayerVehicles[bluePlayer.DeckIndex].VehicleName, cardDetailsLeft);
-            GUI.Label(new Rect(20, Screen.height / 2 - 25, 0, 0), deckAttributes[1] + ": " + bluePlayer.PlayerVehicles[bluePlayer.DeckIndex].VehicleSpeed, cardDetailsLeft);
-            GUI.Label(new Rect(20, Screen.height / 2 + 25, 0, 0), deckAttributes[2] + ": " + bluePlayer.PlayerVehicles[bluePlayer.DeckIndex].VehiclePower, cardDetailsLeft);
-            GUI.Label(new Rect(20, Screen.height / 2 + 75, 0, 0), deckAttributes[3] + ": " + bluePlayer.PlayerVehicles[bluePlayer.DeckIndex].VehicleAgility, cardDetailsLeft);
+            GUI.Label(new Rect(20, Screen.height / 2 - 100, 0, 0), deckAttributes[0] + ": " + currentPlayer.PlayerVehicles[currentPlayer.DeckIndex].VehicleName, cardDetailsLeft);
+            GUI.Label(new Rect(20, Screen.height / 2 - 50, 0, 0), deckAttributes[1] + ": " + currentPlayer.PlayerVehicles[currentPlayer.DeckIndex].VehicleSpeed, cardDetailsLeft);
+            GUI.Label(new Rect(20, Screen.height / 2, 0, 0), deckAttributes[2] + ": " + currentPlayer.PlayerVehicles[currentPlayer.DeckIndex].VehiclePower, cardDetailsLeft);
+            GUI.Label(new Rect(20, Screen.height / 2 + 50, 0, 0), deckAttributes[3] + ": " + currentPlayer.PlayerVehicles[currentPlayer.DeckIndex].VehicleAgility, cardDetailsLeft);
         }
         else
         {
-            GUI.Label(new Rect(20, Screen.height / 2 - 75, 0, 0), deckAttributes[0] + ": " + bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurName, cardDetailsLeft);
-            GUI.Label(new Rect(20, Screen.height / 2 - 25, 0, 0), deckAttributes[1] + ": " + bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurSpeed, cardDetailsLeft);
-            GUI.Label(new Rect(20, Screen.height / 2 + 25, 0, 0), deckAttributes[2] + ": " + bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurStrength, cardDetailsLeft);
-            GUI.Label(new Rect(20, Screen.height / 2 + 75, 0, 0), deckAttributes[3] + ": " + bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurAgility, cardDetailsLeft);
+            GUI.Label(new Rect(20, Screen.height / 2 - 100, 0, 0), deckAttributes[0] + ": " + currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurName, cardDetailsLeft);
+            GUI.Label(new Rect(20, Screen.height / 2 - 50, 0, 0), deckAttributes[1] + ": " + currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurSpeed, cardDetailsLeft);
+            GUI.Label(new Rect(20, Screen.height / 2, 0, 0), deckAttributes[2] + ": " + currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurStrength, cardDetailsLeft);
+            GUI.Label(new Rect(20, Screen.height / 2 + 50, 0, 0), deckAttributes[3] + ": " + currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurAgility, cardDetailsLeft);
         }
-        if (bluePlayer.CurrentTurn)
+        //Only show opponents attributes after player has chosen
+        if (currentPlayer.HasChosen)
         {
-            //Only show opponents attributes after player has chosen
-            if (bluePlayer.HasChosen)
+            if (chosenDeck == 1)
+            {
+                GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 - 75, 0, 0), deckAttributes[0] + ": " + opponentPlayer.PlayerVehicles[opponentPlayer.DeckIndex].VehicleName, cardDetailsRight);
+                GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 - 25, 0, 0), deckAttributes[1] + ": " + opponentPlayer.PlayerVehicles[opponentPlayer.DeckIndex].VehicleSpeed, cardDetailsRight);
+                GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 + 25, 0, 0), deckAttributes[2] + ": " + opponentPlayer.PlayerVehicles[opponentPlayer.DeckIndex].VehiclePower, cardDetailsRight);
+                GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 + 75, 0, 0), deckAttributes[3] + ": " + opponentPlayer.PlayerVehicles[opponentPlayer.DeckIndex].VehicleAgility, cardDetailsRight);
+            }
+            else
+            {
+                GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 - 75, 0, 0), deckAttributes[0] + ": " + opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurName, cardDetailsRight);
+                GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 - 25, 0, 0), deckAttributes[1] + ": " + opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurSpeed, cardDetailsRight);
+                GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 + 25, 0, 0), deckAttributes[2] + ": " + opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurStrength, cardDetailsRight);
+                GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 + 75, 0, 0), deckAttributes[3] + ": " + opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurAgility, cardDetailsRight);
+            }
+        }
+        //If the player hasn't chosen yet, display buttons to choose attribute
+        if (!currentPlayer.HasChosen)
+        {
+            //pick attribute button
+            if (GUI.Button(new Rect(Screen.width / 2 - 550, Screen.height - 200, 300, 100), deckAttributes[1], buttonStyle))
             {
                 if (chosenDeck == 1)
                 {
-                    GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 - 75, 0, 0), deckAttributes[0] + ": " + yellowPlayer.PlayerVehicles[yellowPlayer.DeckIndex].VehicleName, cardDetailsRight);
-                    GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 - 25, 0, 0), deckAttributes[1] + ": " + yellowPlayer.PlayerVehicles[yellowPlayer.DeckIndex].VehicleSpeed, cardDetailsRight);
-                    GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 + 25, 0, 0), deckAttributes[2] + ": " + yellowPlayer.PlayerVehicles[yellowPlayer.DeckIndex].VehiclePower, cardDetailsRight);
-                    GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 + 75, 0, 0), deckAttributes[3] + ": " + yellowPlayer.PlayerVehicles[yellowPlayer.DeckIndex].VehicleAgility, cardDetailsRight);
+                    //Compare attributes, win
+                    if (currentPlayer.PlayerVehicles[currentPlayer.DeckIndex].VehicleSpeed > opponentPlayer.PlayerVehicles[opponentPlayer.DeckIndex].VehicleSpeed)
+                    {
+                        currentPlayer.TurnStatus = 1;
+                    }
+                    //loss
+                    else if (currentPlayer.PlayerVehicles[currentPlayer.DeckIndex].VehicleSpeed < opponentPlayer.PlayerVehicles[opponentPlayer.DeckIndex].VehicleSpeed)
+                    {
+                        currentPlayer.TurnStatus = 2;
+                    }
+                    //draw
+                    else if (currentPlayer.PlayerVehicles[currentPlayer.DeckIndex].VehicleSpeed == opponentPlayer.PlayerVehicles[opponentPlayer.DeckIndex].VehicleSpeed)
+                    {
+                        currentPlayer.TurnStatus = 3;
+                    }
+                    currentPlayer.HasChosen = true;
                 }
                 else
                 {
-                    GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 - 75, 0, 0), deckAttributes[0] + ": " + yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurName, cardDetailsRight);
-                    GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 - 25, 0, 0), deckAttributes[1] + ": " + yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurSpeed, cardDetailsRight);
-                    GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 + 25, 0, 0), deckAttributes[2] + ": " + yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurStrength, cardDetailsRight);
-                    GUI.Label(new Rect(Screen.width - 20, Screen.height / 2 + 75, 0, 0), deckAttributes[3] + ": " + yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurAgility, cardDetailsRight);
+                    if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurSpeed > opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurSpeed)
+                    {
+                        currentPlayer.TurnStatus = 1;
+                    }
+                    else if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurSpeed < opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurSpeed)
+                    {
+                        currentPlayer.TurnStatus = 2;
+                    }
+                    else if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurSpeed == opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurSpeed)
+                    {
+                        currentPlayer.TurnStatus = 3;
+                    }
+                    currentPlayer.HasChosen = true;
                 }
             }
-            //If the player hasn't chosen yet, display buttons to choose attribute
-            if (!bluePlayer.HasChosen)
+
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height - 200, 300, 100), deckAttributes[2], buttonStyle))
             {
-                if (GUI.Button(new Rect(Screen.width / 2 - 550, Screen.height - 200, 300, 100), deckAttributes[1],buttonStyle))
+                if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurStrength > opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurStrength)
                 {
-                    if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurSpeed > yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurSpeed)
-                    {
-                        bluePlayer.TurnStatus = 1;
-                    }
-                    else if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurSpeed < yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurSpeed)
-                    {
-                        bluePlayer.TurnStatus = 2;
-                    }
-                    else if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurSpeed == yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurSpeed)
-                    {
-                        bluePlayer.TurnStatus = 3;
-                    }
-                    bluePlayer.HasChosen = true;
+                    currentPlayer.TurnStatus = 1;
                 }
-
-                if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height - 200, 300, 100), deckAttributes[2], buttonStyle))
+                else if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurStrength < opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurStrength)
                 {
-                    if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurStrength > yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurStrength)
-                    {
-                        bluePlayer.TurnStatus = 1;
-                    }
-                    else if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurStrength < yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurStrength)
-                    {
-                        bluePlayer.TurnStatus = 2;
-                    }
-                    else if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurStrength == yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurStrength)
-                    {
-                        bluePlayer.TurnStatus = 3;
-                    }
-                    bluePlayer.HasChosen = true;
+                    currentPlayer.TurnStatus = 2;
                 }
-
-                if (GUI.Button(new Rect(Screen.width / 2 + 250, Screen.height - 200, 300, 100), deckAttributes[3], buttonStyle))
+                else if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurStrength == opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurStrength)
                 {
-                    if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurAgility > yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurAgility)
-                    {
-                        bluePlayer.TurnStatus = 1;
-                    }
-                    else if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurAgility < yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurAgility)
-                    {
-                        bluePlayer.TurnStatus = 2;
-                    }
-                    else if (bluePlayer.PlayerDinosaurs[bluePlayer.DeckIndex].DinosaurAgility == yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex].DinosaurAgility)
-                    {
-                        bluePlayer.TurnStatus = 3;
-                    }
-                    bluePlayer.HasChosen = true;
+                    currentPlayer.TurnStatus = 3;
                 }
+                currentPlayer.HasChosen = true;
             }
-            //If the player has chosen the attribute, show button to go to next turn
-            if (bluePlayer.HasChosen)
-            {
-                if (GUI.Button(new Rect((Screen.width / 2) - 150, Screen.height - 200, 300, 100), "Next turn", buttonStyle))
-                {
-                    if (bluePlayer.TurnStatus != 1 && bluePlayer.TurnStatus != 2 && bluePlayer.TurnStatus != 3)
-                    {
-                        bluePlayer.TurnStatus = 4;
-                    }
-                    else
-                    {
-                        if (bluePlayer.TurnStatus == 1)
-                        {
-                            bluePlayer.PlayerScore += 1;
-                            bluePlayer.PlayerDinosaurs.Add(yellowPlayer.PlayerDinosaurs[yellowPlayer.DeckIndex]);
-                            yellowPlayer.PlayerDinosaurs.RemoveAt(yellowPlayer.DeckIndex);
-                        }
-                        else if (bluePlayer.TurnStatus == 2)
-                        {
-                            yellowPlayer.PlayerScore += 1;
-                            yellowPlayer.PlayerDinosaurs.Add(bluePlayer.PlayerDinosaurs[yellowPlayer.DeckIndex]);
-                            bluePlayer.PlayerDinosaurs.RemoveAt(yellowPlayer.DeckIndex);
-                        }
-                        else if (bluePlayer.TurnStatus == 3)
-                        {
 
-                        }
-                        bluePlayer.TurnStatus = 0;
-                        bluePlayer.HasChosen = false;
-                        turnCounter++;
-                        bluePlayer.DeckIndex++;
-                        yellowPlayer.DeckIndex++;
+            if (GUI.Button(new Rect(Screen.width / 2 + 250, Screen.height - 200, 300, 100), deckAttributes[3], buttonStyle))
+            {
+                if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurAgility > opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurAgility)
+                {
+                    currentPlayer.TurnStatus = 1;
+                }
+                else if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurAgility < opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurAgility)
+                {
+                    currentPlayer.TurnStatus = 2;
+                }
+                else if (currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex].DinosaurAgility == opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex].DinosaurAgility)
+                {
+                    currentPlayer.TurnStatus = 3;
+                }
+                currentPlayer.HasChosen = true;
+            }
+        }
+        //If the player has chosen the attribute, show button to go to next turn
+        if (currentPlayer.HasChosen)
+        {
+            if (GUI.Button(new Rect((Screen.width / 2) - 150, Screen.height - 200, 300, 100), "Next turn", buttonStyle))
+            {
+                else
+                {
+                    //If player won, add other players card to deck and continue
+                    if (currentPlayer.TurnStatus == 1)
+                    {
+                        currentPlayer.PlayerScore += 1;
+                        currentPlayer.PlayerDinosaurs.Add(opponentPlayer.PlayerDinosaurs[opponentPlayer.DeckIndex]);
+                        opponentPlayer.PlayerDinosaurs.RemoveAt(opponentPlayer.DeckIndex);
                     }
+                    //If player loses, give card to opponent and switch players
+                    else if (currentPlayer.TurnStatus == 2)
+                    {
+                        currentPlayer.CurrentTurn = false;
+                        opponentPlayer.CurrentTurn = true;
+                        opponentPlayer.PlayerScore += 1;
+                        opponentPlayer.PlayerDinosaurs.Add(currentPlayer.PlayerDinosaurs[currentPlayer.DeckIndex]);
+                        currentPlayer.PlayerDinosaurs.RemoveAt(currentPlayer.DeckIndex);
+                    }
+                    //Reset player values and increment current card index for players
+                    currentPlayer.TurnStatus = 0;
+                    currentPlayer.HasChosen = false;
+                    currentPlayer.DeckIndex++;
+                    opponentPlayer.DeckIndex++;
                 }
             }
         }

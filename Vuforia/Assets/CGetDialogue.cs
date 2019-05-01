@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
 
+//Written by Joe and Josh
+
 //Get dialogue from the "dialogue.xml" file based on an attritube, and return the value
 [System.Serializable]
 public class CGetDialogue

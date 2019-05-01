@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\CDecks.cs" />
     <Compile Include="Assets\CDinosaur.cs" />
+    <Compile Include="Assets\CGetDialogue.cs" />
     <Compile Include="Assets\COOPGame.cs" />
     <Compile Include="Assets\CPlayer.cs" />
     <Compile Include="Assets\CVehicle.cs" />
@@ -75,6 +76,7 @@
     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
     <None Include="Assets\Vuforia\Databases\Emulator\VuforiaEmulator.xml" />
     <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
+    <None Include="Assets\Assets\dialogue.xml" />
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />

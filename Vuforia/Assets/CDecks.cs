@@ -27,17 +27,17 @@ public class CDecks
         {
             //Create Vehicle objects with name (string), speed (int), power (int) and agility (int)
             new CVehicle("Aeroplane",5,5,1),
-            new CVehicle("Ambulance",1,1,1),
-            new CVehicle("Bicycle",1,1,1),
-            new CVehicle("Bus",1,1,1),
-            new CVehicle("Car",1,1,1),
-            new CVehicle("Fire Engine",1,1,1),
-            new CVehicle("Helicopter",1,1,1),
-            new CVehicle("Motorcycle",1,1,1),
-            new CVehicle("Police Car",1,1,1),
-            new CVehicle("Scooter",1,1,1),
-            new CVehicle("Tractor",1,1,1),
-            new CVehicle("Truck",1,1,1)
+            new CVehicle("Ambulance",3,4,3),
+            new CVehicle("Bicycle",1,1,5),
+            new CVehicle("Bus",2,3,2),
+            new CVehicle("Car",3,2,3),
+            new CVehicle("Fire Engine",3,3,2),
+            new CVehicle("Helicopter",4,4,4),
+            new CVehicle("Motorcycle",3,3,5),
+            new CVehicle("Police Car",4,3,3),
+            new CVehicle("Scooter",2,1,5),
+            new CVehicle("Tractor",2,4,1),
+            new CVehicle("Truck",3,3,1)
         });
     }
 
