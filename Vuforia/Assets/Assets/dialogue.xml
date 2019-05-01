@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<resources>
+    <blue_player>Blue Player</blue_player>
+    <yellow_player>Yellow Player</yellow_player>
+    <win_message>You win!</win_message>
+    <win_turn>You win this turn!</win_turn>
+    <lose_message>You lose!</lose_message>
+    <lose_turn>You lose this turn!</lose_turn>
+    <draw_turn>You draw this turn!</draw_turn>
+    <category_vehicles>Vehicles/</category_vehicles>
+    <category_dinosaurs>Dinosaurs/</category_dinosaurs>
+    <turn_not_played>You must play your turn first</turn_not_played>
+    <turn_append>'s turn</turn_append>
+    <score>Score: </score>
+    <name>Name</name>
+    <strength>Strength</strength>
+    <speed>Speed</speed>
+    <agility>Agility</agility>
+</resources>
