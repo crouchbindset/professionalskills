@@ -1,0 +1,4 @@
+#Thu May 02 14:05:46 BST 2019
+base.0=/Users/jackfisher/Documents/GitHub/professionalskills/Vuforia/Temp/gradleOut/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

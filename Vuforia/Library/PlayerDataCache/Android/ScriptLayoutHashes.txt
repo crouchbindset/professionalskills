@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/Cameron/Desktop/ARapp.apk
+/Users/jackfisher/Documents/GitHub/professionalskills/Vuforia/TopTrumps.apk
 SceneListBegin?
 Assets/MainMenu.unity
 SceneListEnd?
@@ -207,8 +207,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 71bb6a6b6c8f052f948db64c7dd3ca4f VuforiaScripts.dll:.DefaultTrackableEventHandler
 aa82b3ce4c0c9b227036c0337315c5d3 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 e51c09a4cc447f11db225afcd8e3e490 Unity.TextMeshPro.dll:TMPro.TMP_Settings
-88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.BeforeAfterTestCommandState
-88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.EnumerableSetUpTearDownCommandState
+cf96e5f7b3d069bab453925bd41be04e UnityEngine.TestRunner.dll:UnityEngine.TestTools.EnumerableSetUpTearDownCommandState
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 259d013faac28e8ba0aa2a7542273735 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -226,7 +225,7 @@ dff7a11839abb9fb7222280cf3c0a95a VuforiaScripts.dll:.DefaultModelRecoEventHandle
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-10006b935f2c5dacd26ac09c34966eed Assembly-CSharp.dll:.SinglePlayer
+41dc00d26c0b6efb1e7d16de95c2513b Assembly-CSharp.dll:.COOPGame
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
